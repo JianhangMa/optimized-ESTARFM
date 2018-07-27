@@ -18,7 +18,9 @@
 ;(1)Xiaolin Zhu, Jin Chen, Feng Gao, & Jeffrey G Masek.
 ;   An enhanced spatial and temporal adaptive reflectance fusion model for complex
 ;   heterogeneous regions. Remote Sensing of Environment,2010,114,2610-2623
-;(2)
+;(2)Jianhang Ma, Wenjuan Zhang, Andrea Marinoni, Lianru Gao, Bing Zhang, “Performance assessment of
+;   ESTARFM with different similar-pixel identification schemes,” J. Appl. Remote Sens. 12(2),
+;   025017 (2018), doi: 10.1117/1.JRS.12.025017.
 ;
 ;PURPOSE:
 ;  Do pridiction with ESTARFM
@@ -26,8 +28,8 @@
 ;PROCEDURE:
 ;  1) open data, query image information
 ;  2) determine valid pixels
-;  3) devide the image to several blocks by lines of the image
-;  4) do prediction of for each blocks with a processor by calling "ESTARFM_byThreshold_compute"
+;  3) compute threshold
+;  4) do prediction for each pixel
 ;  5) output the results
 ;INPUTS:
 ; w            : half moving window size. the moving window size in prediction is 2*w+1.
